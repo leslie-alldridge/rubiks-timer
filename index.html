@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        #randomstate { visibility: hidden; }
+    </style>
+    <title>Cube</title>
+</head>
+<body>
+        <p id="status"></p>
+            <p id="randomstate">
+            <button>Generate random scramble</button><br>
+            <span class="result"></span>
+        </p>
+<script
+    src="https://code.jquery.com/jquery-3.3.1.slim.js"
+    integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+    crossorigin="anonymous">
+</script>
+    <script src="./node_modules/cubejs/lib/cube.js"></script>
+    <script src="./node_modules/cubejs/lib/async.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

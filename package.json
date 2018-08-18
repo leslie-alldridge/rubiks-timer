@@ -1,0 +1,9 @@
+{
+  "name": "cubey",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cubejs": "^1.1.0"
+  }
+}
