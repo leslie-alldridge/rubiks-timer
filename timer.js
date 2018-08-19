@@ -56,6 +56,8 @@ document.body.onkeyup = function(e){
         run();
     }
 }
+//start on touch
+
 
 function run() {
   if (!running) {
