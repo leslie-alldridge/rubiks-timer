@@ -11,12 +11,13 @@
             clearInterval(progressHandle);
 
             // Show the duration of initialization
-            var end = new Date,
-                duration = (end - start) / 1000;
-            $('#status').text('Initialization done in ' + duration + ' seconds.');
+            // var end = new Date,
+            //     duration = (end - start) / 1000;
+            // $('#status').text('Initialization done in ' + duration + ' seconds.');
 
             // Show the scrambler
             $('#randomstate').css('visibility', 'visible');
+            generateScramble();
             $('#randomstate button').on('click', generateScramble);
         };
 

@@ -7,19 +7,23 @@
     <style>
         #randomstate { visibility: hidden; }
     </style>
-    <title>Cube</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Cube Scramble and Timer</title>
 </head>
 <body>
-    <div class="scrambler">
+    <div id="scrambler" class="split right">
+        <div class="centered">
         <p id="status"></p>
             <p id="randomstate">
-            <button>Generate random scramble</button><br>
             <span class="result"></span>
-            <button id="done">Click when scrambled</button>
+            <br>
+            <button>Generate random scramble</button>
         </p>
     </div>
-    <div class="container randomstate">
-        <p>Timer goes here</p>
+    </div>
+    <div id="container" class="split left">
+        <div class="centered">
+        <p>Time your solve</p>
         <div id = "scram"></div>
     <div id="timeOut"><span id="min"></span><span id="colon"></span><span id="sec">0</span>.<span id="decimal">00</span></div>
       <div id = "timeList"></div>
@@ -28,8 +32,10 @@
         <span id = "solveNum">Solves: 0</span> <br/>
         <span id = "overallAv">Average: </span><br/>
         <span id = "fastest">Best: </span>
+    </div>
       </div>
     </div> 
+  
 
 <script
     src="https://code.jquery.com/jquery-3.3.1.slim.js"
