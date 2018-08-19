@@ -10,18 +10,35 @@
     <title>Cube</title>
 </head>
 <body>
+    <div class="scrambler">
         <p id="status"></p>
             <p id="randomstate">
             <button>Generate random scramble</button><br>
             <span class="result"></span>
+            <button id="done">Click when scrambled</button>
         </p>
+    </div>
+    <div class="container randomstate">
+        <p>Timer goes here</p>
+        <div id = "scram"></div>
+    <div id="timeOut"><span id="min"></span><span id="colon"></span><span id="sec">0</span>.<span id="decimal">00</span></div>
+      <div id = "timeList"></div>
+      <div id = "stats">
+        <a id = "clear" href = "#">Clear Times</a><br/>
+        <span id = "solveNum">Solves: 0</span> <br/>
+        <span id = "overallAv">Average: </span><br/>
+        <span id = "fastest">Best: </span>
+      </div>
+    </div> 
+
 <script
     src="https://code.jquery.com/jquery-3.3.1.slim.js"
     integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
     crossorigin="anonymous">
 </script>
-    <script src="./node_modules/cubejs/lib/cube.js"></script>
-    <script src="./node_modules/cubejs/lib/async.js"></script>
+    <script src="./timer.js"></script>
+    <script src="./cube.js"></script>
+    <script src="./async.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

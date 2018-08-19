@@ -42,6 +42,6 @@
             progressHandle = setInterval(progress, 1000);
 
             // Start precomputing
-            Cube.asyncInit('./node_modules/cubejs/lib/worker.js', initialized);
+            Cube.asyncInit('./worker.js', initialized);
         });
         })();
