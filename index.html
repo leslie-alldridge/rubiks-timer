@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>
-        #randomstate { visibility: hidden; }
-    </style>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
-    <title>Cube Scramble and Timer</title>
-</head>
-<body>
-    <div id="scrambler" class="split right">
-        <div class="centered">
-        <p id="status"></p>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <style>
+         #randomstate { visibility: hidden; }
+      </style>
+      <link rel="stylesheet" type="text/css" href="styles.css"/>
+      <title>Cube Scramble and Timer</title>
+   </head>
+   <body>
+      <div id="scrambler" class="split right">
+         <div class="centered">
+            <p id="status"></p>
             <p id="randomstate">
-            <span class="result"></span>
-            <br>
-            <button>Generate random scramble</button>
-        </p>
-    </div>
-    </div>
-    <div id="container" class="split left">
-        <div class="centered">
-        <p>Time your solve</p>
-        <div id = "scram"></div>
-    <div id="timeOut"><span id="min"></span><span id="colon"></span><span id="sec">0</span>.<span id="decimal">00</span></div>
-      <div id = "timeList"></div>
-      <div id = "stats">
-        <a id = "clear" href = "#">Clear Times</a><br/>
-        <span id = "solveNum">Solves: 0</span> <br/>
-        <span id = "overallAv">Average: </span><br/>
-        <span id = "fastest">Best: </span>
-    </div>
+               <span class="result"></span>
+               <br>
+               <button>Generate random scramble</button>
+            </p>
+         </div>
       </div>
-    </div> 
-  
-
-<script
-    src="https://code.jquery.com/jquery-3.3.1.slim.js"
-    integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-    crossorigin="anonymous">
-</script>
-    <script src="./timer.js"></script>
-    <script src="./cube.js"></script>
-    <script src="./async.js"></script>
-    <script src="./main.js"></script>
-</body>
+      <div id="container" class="split left" ontouchstart="run()">
+         <div class="centered">
+            <p>Time your solve</p>
+            <div id = "scram"></div>
+            <div id="timeOut"><span id="min"></span><span id="colon"></span><span id="sec">0</span>.<span id="decimal">00</span></div>
+            <div id = "timeList"></div>
+            <div id = "stats">
+               <a id = "clear" href = "#">Clear Times</a><br/>
+               <span id = "solveNum">Solves: 0</span> <br/>
+               <span id = "overallAv">Average: </span><br/>
+               <span id = "fastest">Best: </span>
+            </div>
+         </div>
+      </div>
+      <script
+         src="https://code.jquery.com/jquery-3.3.1.slim.js"
+         integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+         crossorigin="anonymous"></script>
+      <script src="./timer.js"></script>
+      <script src="./cube.js"></script>
+      <script src="./async.js"></script>
+      <script src="./main.js"></script>
+   </body>
 </html>
