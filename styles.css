@@ -29,7 +29,7 @@
    */
 
    html,body{
-    margin:10px;
+    margin:0px;
     padding:0;
     height:100%;
     width:100%;
@@ -63,6 +63,8 @@
     text-align: center;
   }
 
+  
+
   @media only screen and (max-width: 600px) {
     #scrambler {
       position: absolute;
@@ -85,5 +87,16 @@
     bottom: 0;
     text-align:center;
     color:#FFFFFF;
+    }
+
+    html,body{
+      margin:0px;
+      padding:0;
+      height:100%;
+      width:100%;
+    }
+
+    .split {
+      padding-top: 0px;
     }
 }

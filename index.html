@@ -8,6 +8,7 @@
          #randomstate { visibility: hidden; }
       </style>
       <link rel="stylesheet" type="text/css" href="styles.css"/>
+      <link rel="stylesheet" type="text/css" href="reset.cssw"/>
       <title>Cube Scramble and Timer</title>
    </head>
    <body>
@@ -22,7 +23,9 @@
          </div>
       </div>
       <div id="container" class="split left">
-         <div class="centered" ontouchstart="run()">
+         <div class="centered">
+             <a id = "clear" href = "#">Clear Times</a><br/>
+             <div class="content" ontouchstart="run()">
             <p>Time your solve</p>
             <div id = "scram"></div>
             <div id="timeOut"><span id="min"></span><span id="colon"></span><span id="sec">0</span>.<span id="decimal">00</span></div>
@@ -34,7 +37,7 @@
                <span id = "fastest">Best: </span>
             </div>
          </div>
-         <a id = "clear" href = "#">Clear Times</a><br/>
+         </div>
       </div>
       
       <script
