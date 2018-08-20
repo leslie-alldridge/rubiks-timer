@@ -12,6 +12,7 @@ var colon = document.getElementById("colon");
 var timesOut = document.getElementById("timeOut");
 var timesList = document.getElementById("timeList");
 var clearAll = document.getElementById("clear");
+var timerHead = document.getElementById("timerHead");
 var timesDisplay = new Array();
 var csTimes = new Array();
 var avAll = 0;
@@ -65,7 +66,8 @@ function run() {
     sec = 0;
     min = 0;
     cs = 0;
-    bgColor.style.backgroundColor = "green";
+    timerHead.innerHTML = "Time your solve"
+    bgColor.style.backgroundImage = 'url(bg.jpeg)';
     secOut.innerHTML = "0";
     minOut.innerHTML = "";
     colon.innerHTML = "";
@@ -74,7 +76,8 @@ function run() {
     interval = setInterval(timer, 10);
   } else if (running) {
     running = false;
-    bgColor.style.backgroundColor = "red";
+    bgColor.style.backgroundImage = '';
+    bgColor.style.backgroundColor = "rgba(255,0,0,0.6)";
 
     clearInterval(interval);
     timesDisplay.push(" " + timesOut.innerHTML);
@@ -107,6 +110,8 @@ function calculateStats() {
   for (var x = 0; x < csTimes.length; x++) {
     if (csTimes[x] < best) {
       best = csTimes[x];
+      bgColor.style.backgroundColor = "green";
+      timerHead.innerHTML = "New Personal Best!"
     }
     if (csTimes[x] > worst) {
       worst = csTimes[x];

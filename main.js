@@ -41,7 +41,7 @@
     };
 
     $(function() {
-        $('#status').text('Initializing');
+        $('#status').text('Loading scramble');
 
         // Start measuring time
         start = new Date;

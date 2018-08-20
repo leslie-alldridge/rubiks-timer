@@ -8,7 +8,9 @@
          #randomstate { visibility: hidden; }
       </style>
       <link rel="stylesheet" type="text/css" href="styles.css"/>
-      <link rel="stylesheet" type="text/css" href="reset.cssw"/>
+      <link rel="stylesheet" type="text/css" href="reset.css"/>
+      <link href="https://fonts.googleapis.com/css?family=Orbitron:700,900" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet"> 
       <title>Cube Scramble and Timer</title>
    </head>
    <body>
@@ -16,22 +18,26 @@
          <div class="centered">
             <p id="status"></p>
             <p id="randomstate">
+                
                <span class="result"></span>
                <br>
-               <button>Generate random scramble</button>
+               
+               <button>Generate random scramble</button><br/>
+               
+               <a id = "clear" href = "#">Clear Times</a><br/>
+               <a id = "export" href = "#">Export Times</a>
             </p>
+            
          </div>
       </div>
       <div id="container" class="split left">
          <div class="centered">
-             <a id = "clear" href = "#">Clear Times</a><br/>
              <div class="content" ontouchstart="run()">
-            <p>Time your solve</p>
+            <p id="timerHead">Time your solve</p>
             <div id = "scram"></div>
             <div id="timeOut"><span id="min"></span><span id="colon"></span><span id="sec">0</span>.<span id="decimal">00</span></div>
             <div id = "timeList"></div>
             <div id = "stats">
-               
                <span id = "solveNum">Solves: 0</span> <br/>
                <span id = "overallAv">Average: </span><br/>
                <span id = "fastest">Best: </span>
@@ -39,6 +45,9 @@
          </div>
          </div>
       </div>
+     
+        
+   
       
       <script
          src="https://code.jquery.com/jquery-3.3.1.slim.js"

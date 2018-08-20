@@ -1,34 +1,6 @@
-/* #container{
-    width: 520px;
-    height: 255px;
-    font-family: "Arial";
-    overflow-x:auto;
-   
-  }
-  #timeList{
-    width:  120px;
-    height: 230px;
-    margin-left:310px;
-    overflow-y:auto;
-    padding-top:5px;
-  }
-  #timeOut{
-    font-size: 5em;
-    width: 310px;
-    height: 90px;
-    position:absolute;
-  }
-  #stats{
-    width:310px;
-    height:138px;
-    position: absolute;
-    top:110px;
-  }
 
 
-   */
-
-   html,body{
+  html,body{
     margin:0px;
     padding:0;
     height:100%;
@@ -48,6 +20,7 @@
   #container{
     right: 0;
     background-color: gainsboro;
+    color: white;
   }
   
   #scrambler{
@@ -63,6 +36,40 @@
     text-align: center;
   }
 
+  #timeOut {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 7em;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+
+  #stats {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 50px;
+  }
+
+  #solveNum {
+    display: block;
+  }
+  #overallAv {
+    display: block;
+  }
+  #fastest {
+    display: block;
+  }
+
+  #timerHead {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 90px;
+  }
+
+  #timeList {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+  }
   
 
   @media only screen and (max-width: 600px) {
@@ -98,5 +105,14 @@
 
     .split {
       padding-top: 0px;
+     
     }
+}
+
+#export {
+  
+}
+
+#randomstate {
+
 }
